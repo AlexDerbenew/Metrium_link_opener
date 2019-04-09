@@ -1,12 +1,12 @@
 Windows Registry Editor Version 5.00
 
-[HKEY_CLASSES_ROOT\myproto]
+[HKEY_CLASSES_ROOT\crmfile]
 "URL Protocol"=""
-@="URL:Myproto Protocol"
+@="URL:crmfile Protocol"
 
-[HKEY_CLASSES_ROOT\myproto\shell]
+[HKEY_CLASSES_ROOT\crmfile\shell]
 
-[HKEY_CLASSES_ROOT\myproto\shell\open]
+[HKEY_CLASSES_ROOT\crmfile\shell\open]
 
-[HKEY_CLASSES_ROOT\myproto\shell\open\command]
+[HKEY_CLASSES_ROOT\crmfile\shell\open\command]
 @="\"C:\\crmfile.bat\" \"%1\""
