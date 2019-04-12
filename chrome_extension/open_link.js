@@ -10,5 +10,12 @@ else{
     var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
     var text = innerDoc.documentElement.querySelector(['[data-cid=UF_CRM_1528388648]']).querySelector('.crm-entity-widget-content-block-inner').firstChild.firstChild.innerText;
 }
-window.open("crmfile://"+text,"_blank");
+text = "crmfile://" + text;
+
+chrome.runtime.sendMessage(
+    {link_text: text},
+    function(responce){
+        console.log("Responce from extension: " + responce);
+    }
+);
 
